@@ -1,0 +1,57 @@
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+$secondary: $gray-600;
+$light: $gray-100;
+$dark: $gray-900;
+
+$primary: #a9a9a9;
+$primary-dark: #494949;
+$primary-light: #f7f7f7;
+$danger: #dc3545;
+$success: #198754;
+$warning: #ffc107;
+
+$theme-colors: (
+	"primary": $primary,
+	"primary-dark": $primary-dark,
+	"primary-light": $primary-light,
+	"danger": $danger,
+	"success": $success,
+	"warning": $warning,
+	"light": $light,
+	"dark": $dark,
+);
+
+$font-weight-lighter: 200;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 600;
+$font-weight-bolder: 700;
+
+$spacer: 1rem;
+$spacers: (
+	0: 0,
+	1: $spacer * 0.25,
+	2: $spacer * 0.5,
+	3: $spacer,
+	4: $spacer * 2,
+	5: $spacer * 3,
+);
+
+$border-radius: 8px;
+$border-radius-sm: 4px;
+$border-radius-lg: 16px;
+$border-radius-pill: 128px;
+
+@import "../scss/utilities";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";

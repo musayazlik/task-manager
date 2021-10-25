@@ -1,6 +1,7 @@
 $utilities: (
    "FontSize": (
-      property: ["font-size","line-height"],
+      property: [ "font-size",
+      "line-height" ],
       class: fs,
       responsive: true,
       values: (
@@ -11,6 +12,7 @@ $utilities: (
          16: 16px,
          18: 18px,
          20: 20px,
+         22: 22px,
          24: 24px,
          28: 28px,
          32: 32px,

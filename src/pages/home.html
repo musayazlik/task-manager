@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Home</title>
+
+
+   <!--  Font  -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+   <!-- Css Files -->
+   <link rel="stylesheet" href="../../assets/css/main.css" />
+</head>
+
+<body>
+
+   <!-- Home Header Section Html Code Start -->
+
+   <header class="sticky-top ">
+      <div class="container-lg container-fluid px-4">
+         <div class="row border border-3 border-primary-light border-top-0 rounded-bottom shadow-sm bg-white">
+            <div class="col-12 col-md-6 col-xl-3">
+               <div
+                  class="d-flex align-items-center h-100  ms-md-3 justify-content-center justify-content-md-start py-2">
+                  <i style="width: 24px; height:24px; min-width: 24px;"
+                     class="fas fa-exclamation me-3 bg-warning d-flex justify-content-center align-items-center rounded-2 text-white fs-14"></i>
+                  <p class="m-0 fw-bold text-muted text-nowrap">You have 10 new missions today.</p>
+               </div>
+            </div>
+            <div class="col-8 col-md-4 col-xl-6">
+               <div class="row align-items-center text-start text-md-center h-100 py-2">
+                  <h1 class="fs-28 fw-bolder mb-1">Welcome...</h1>
+                  <p class="mb-0 fs-16 fw-bold text-muted">Musa Yazlık</p>
+               </div>
+            </div>
+            <div class="col-4 col-md-2 col-xl-3">
+
+               <div class="d-flex justify-content-end align-items-center h-100">
+
+                  <div class="dropdown">
+                     <span id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="user-profile d-flex justify-content-center align-items-center me-3">
+                           <img style="width: 32px; min-width: 32px;"
+                              class="rounded-2 border border-3 border-white shadow-sm img-fluid"
+                              src="../../assets/img/avatar.jpg" alt="">
+                           <i class="fas fa-caret-down ms-2 text-muted"></i>
+                        </div>
+                     </span>
+                     <ul style="z-index: 1030;"
+                        class="dropdown-menu dropdown-menu-lg-end mt-4 border-3 border-primary-dark py-3 px-4 bg-primary-light"
+                        aria-labelledby="dropdownMenuButton1">
+
+
+                        <li class="bg-primary-dark text-white mb-3 px-3 py-2 rounded-2"><a
+                              class="text-white text-decoration-none h-100 w-100" href="#">Profile</a></li>
+                        <li class="bg-primary-dark text-white mb-3 px-3 py-2 rounded-2"><a
+                              class="text-white text-decoration-none" href="#">Informations</a></li>
+
+                        <li class="bg-primary-dark text-white px-3 py-2 rounded-2"><a
+                              class="text-white text-decoration-none" href="#">Add New Task</a></li>
+
+
+                     </ul>
+                  </div>
+
+                  <div style="width: 32px; height: 32px; min-width: 32px;"
+                     class="bg-danger rounded-2 d-flex justify-content-center align-items-center border border-3 border-white shadow-sm me-3">
+                     <i class="fas fa-times fs-16 text-white "></i>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <!-- Home Header Section Html Code End -->
+
+   <!-- Home Page Title Section Html Code Start -->
+
+   <section id="page-title" class="my-5">
+      <h1 class="fs-48 text-dark fw-bolder text-center">Home</h1>
+   </section>
+
+   <!-- Home Page Title Section Html Code End-->
+
+   <!-- Home Content Section Html Code Start -->
+
+   <section id="content" class="bg-primary-light min-vh-100">
+      <div class="container-xxl container-fluid min-vh-100">
+         <div class="row h-100 min-vh-100 justify-content-center justify-content-md-start">
+            <div class="col-11 col-sm-9 col-md-8 col-lg-8 col-xl-9">
+               <div class="filter mt-4 mb-4">
+                  <div class="d-flex">
+                     <button class="btn btn-primary me-3 fw-bold fs-16 py-2 px-3 rounded-1 bg-primary-dark text-white"
+                        type="button">Bu Gün</button>
+                     <button class="btn btn-primary me-3 fw-bold fs-16 py-2 px-3 rounded-1 bg-primary-dark text-white"
+                        type="button">Bu Hafta</button>
+                     <button class="btn btn-primary me-3 fw-bold fs-16 py-2 px-3 rounded-1 bg-primary-dark text-white"
+                        type="button">Bu Ay</button>
+                  </div>
+               </div>
+
+               <div class="task-cards">
+                  <div class="card mb-4 border-0 shadow-sm rounded-0 " style="max-width: 800px;">
+                     <div class="row g-0">
+                        <div class="col-md-4">
+                           <img src="../../assets/img/card-img.jpg" class="img-fluid overflow-hidden h-100" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                           <div class="card-body d-flex justify-content-between flex-column h-100">
+                              <div class="d-flex justify-content-between align-items-center mb-2">
+                                 <h5 class="card-title fw-bold fs-24 m-0">Task Title</h5>
+                                 <div class="card-durum d-flex justify-content-center align-items-center gap-3 ">
+                                    <div class="form-check">
+                                       <input style="width: 28px; height: 28px;" type="checkbox"
+                                          class="form-check-input border-2 rounded-2 border-primary-dark"
+                                          id="exampleCheck1">
+                                    </div>
+
+                                    <button name="edit" style="width: 28px; height: 28px;" type="button"
+                                       class="btn btn-success d-flex justify-content-center align-items-center rounded-2">
+                                       <i class="fas fa-pen fs-16"></i>
+                                    </button>
+                                    <button name="delete" style="width: 28px; height: 28px;" type="button"
+                                       class="btn btn-danger d-flex justify-content-center align-items-center rounded-2">
+                                       <i class="fas fa-times fs-16 text-white "></i>
+                                    </button>
+                                 </div>
+                              </div>
+                              <p class="card-text mt-2 mb-4 text-muted">This is a wider card with supporting text below
+                                 as a
+                                 natural lead-in
+                                 to additional content. This content is a little bit longer.</p>
+
+                              <div class="cart-bottom d-flex justify-content-between">
+                                 <div class="left d-flex flex-column align-items-start">
+                                    <h4 class="fs-16 fw-bold text-primary-dark mb-1">Date of Mission</h4>
+                                    <p class="fw-normal fs-14 text-muted m-0">22.10.2021</p>
+                                 </div>
+                                 <div class="right d-flex flex-column align-items-center">
+                                    <h4 class="fs-16 fw-bold text-primary-dark mb-1">Priority Status</h4>
+                                    <p class="fw-normal fs-14 text-muted m-0">High</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card mb-4 border-0 shadow-sm rounded-0 " style="max-width: 800px;">
+                     <div class="row g-0">
+                        <div class="col-md-4">
+                           <img src="../../assets/img/card-img.jpg" class="img-fluid overflow-hidden h-100" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                           <div class="card-body d-flex justify-content-between flex-column h-100">
+                              <div class="d-flex justify-content-between align-items-center mb-2">
+                                 <h5 class="card-title fw-bold fs-24 m-0">Task Title</h5>
+                                 <div class="card-durum d-flex justify-content-center align-items-center gap-3 ">
+                                    <div class="form-check">
+                                       <input style="width: 28px; height: 28px;" type="checkbox"
+                                          class="form-check-input border-2 rounded-2 border-primary-dark"
+                                          id="exampleCheck1">
+                                    </div>
+
+                                    <button name="edit" style="width: 28px; height: 28px;" type="button"
+                                       class="btn btn-success d-flex justify-content-center align-items-center rounded-2">
+                                       <i class="fas fa-pen fs-16"></i>
+                                    </button>
+                                    <button name="delete" style="width: 28px; height: 28px;" type="button"
+                                       class="btn btn-danger d-flex justify-content-center align-items-center rounded-2">
+                                       <i class="fas fa-times fs-16 text-white "></i>
+                                    </button>
+                                 </div>
+                              </div>
+                              <p class="card-text mt-2 mb-4 text-muted">This is a wider card with supporting text below
+                                 as a
+                                 natural lead-in
+                                 to additional content. This content is a little bit longer.</p>
+
+                              <div class="cart-bottom d-flex justify-content-between">
+                                 <div class="left d-flex flex-column align-items-start">
+                                    <h4 class="fs-16 fw-bold text-primary-dark mb-1">Date of Mission</h4>
+                                    <p class="fw-normal fs-14 text-muted m-0">22.10.2021</p>
+                                 </div>
+                                 <div class="right d-flex flex-column align-items-center">
+                                    <h4 class="fs-16 fw-bold text-primary-dark mb-1">Priority Status</h4>
+                                    <p class="fw-normal fs-14 text-muted m-0">High</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card mb-4 border-0 shadow-sm rounded-0 " style="max-width: 800px;">
+                     <div class="row g-0">
+                        <div class="col-md-4">
+                           <img src="../../assets/img/card-img.jpg" class="img-fluid overflow-hidden h-100" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                           <div class="card-body d-flex justify-content-between flex-column h-100">
+                              <div class="d-flex justify-content-between align-items-center mb-2">
+                                 <h5 class="card-title fw-bold fs-24 m-0">Task Title</h5>
+                                 <div class="card-durum d-flex justify-content-center align-items-center gap-3 ">
+                                    <div class="form-check">
+                                       <input style="width: 28px; height: 28px;" type="checkbox"
+                                          class="form-check-input border-2 rounded-2 border-primary-dark"
+                                          id="exampleCheck1">
+                                    </div>
+
+                                    <button name="edit" style="width: 28px; height: 28px;" type="button"
+                                       class="btn btn-success d-flex justify-content-center align-items-center rounded-2">
+                                       <i class="fas fa-pen fs-16"></i>
+                                    </button>
+                                    <button name="delete" style="width: 28px; height: 28px;" type="button"
+                                       class="btn btn-danger d-flex justify-content-center align-items-center rounded-2">
+                                       <i class="fas fa-times fs-16 text-white "></i>
+                                    </button>
+                                 </div>
+                              </div>
+                              <p class="card-text mt-2 mb-4 text-muted">This is a wider card with supporting text below
+                                 as a
+                                 natural lead-in
+                                 to additional content. This content is a little bit longer.</p>
+
+                              <div class="cart-bottom d-flex justify-content-between">
+                                 <div class="left d-flex flex-column align-items-start">
+                                    <h4 class="fs-16 fw-bold text-primary-dark mb-1">Date of Mission</h4>
+                                    <p class="fw-normal fs-14 text-muted m-0">22.10.2021</p>
+                                 </div>
+                                 <div class="right d-flex flex-column align-items-center">
+                                    <h4 class="fs-16 fw-bold text-primary-dark mb-1">Priority Status</h4>
+                                    <p class="fw-normal fs-14 text-muted m-0">High</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card mb-4 border-0 shadow-sm rounded-0 " style="max-width: 800px;">
+                     <div class="row g-0">
+                        <div class="col-md-4">
+                           <img src="../../assets/img/card-img.jpg" class="img-fluid overflow-hidden h-100" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                           <div class="card-body d-flex justify-content-between flex-column h-100">
+                              <div class="d-flex justify-content-between align-items-center mb-2">
+                                 <h5 class="card-title fw-bold fs-24 m-0">Task Title</h5>
+                                 <div class="card-durum d-flex justify-content-center align-items-center gap-3 ">
+                                    <div class="form-check">
+                                       <input style="width: 28px; height: 28px;" type="checkbox"
+                                          class="form-check-input border-2 rounded-2 border-primary-dark"
+                                          id="exampleCheck1">
+                                    </div>
+
+                                    <button name="edit" style="width: 28px; height: 28px;" type="button"
+                                       class="btn btn-success d-flex justify-content-center align-items-center rounded-2">
+                                       <i class="fas fa-pen fs-16"></i>
+                                    </button>
+                                    <button name="delete" style="width: 28px; height: 28px;" type="button"
+                                       class="btn btn-danger d-flex justify-content-center align-items-center rounded-2">
+                                       <i class="fas fa-times fs-16 text-white "></i>
+                                    </button>
+                                 </div>
+                              </div>
+                              <p class="card-text mt-2 mb-4 text-muted">This is a wider card with supporting text below
+                                 as a
+                                 natural lead-in
+                                 to additional content. This content is a little bit longer.</p>
+
+                              <div class="cart-bottom d-flex justify-content-between">
+                                 <div class="left d-flex flex-column align-items-start">
+                                    <h4 class="fs-16 fw-bold text-primary-dark mb-1">Date of Mission</h4>
+                                    <p class="fw-normal fs-14 text-muted m-0">22.10.2021</p>
+                                 </div>
+                                 <div class="right d-flex flex-column align-items-center">
+                                    <h4 class="fs-16 fw-bold text-primary-dark mb-1">Priority Status</h4>
+                                    <p class="fw-normal fs-14 text-muted m-0">High</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card mb-4 border-0 shadow-sm rounded-0 " style="max-width: 800px;">
+                     <div class="row g-0">
+                        <div class="col-md-4">
+                           <img src="../../assets/img/card-img.jpg" class="img-fluid overflow-hidden h-100" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                           <div class="card-body d-flex justify-content-between flex-column h-100">
+                              <div class="d-flex justify-content-between align-items-center mb-2">
+                                 <h5 class="card-title fw-bold fs-24 m-0">Task Title</h5>
+                                 <div class="card-durum d-flex justify-content-center align-items-center gap-3 ">
+                                    <div class="form-check">
+                                       <input style="width: 28px; height: 28px;" type="checkbox"
+                                          class="form-check-input border-2 rounded-2 border-primary-dark"
+                                          id="exampleCheck1">
+                                    </div>
+
+                                    <button name="edit" style="width: 28px; height: 28px;" type="button"
+                                       class="btn btn-success d-flex justify-content-center align-items-center rounded-2">
+                                       <i class="fas fa-pen fs-16"></i>
+                                    </button>
+                                    <button name="delete" style="width: 28px; height: 28px;" type="button"
+                                       class="btn btn-danger d-flex justify-content-center align-items-center rounded-2">
+                                       <i class="fas fa-times fs-16 text-white "></i>
+                                    </button>
+                                 </div>
+                              </div>
+                              <p class="card-text mt-2 mb-4 text-muted">This is a wider card with supporting text below
+                                 as a
+                                 natural lead-in
+                                 to additional content. This content is a little bit longer.</p>
+
+                              <div class="cart-bottom d-flex justify-content-between">
+                                 <div class="left d-flex flex-column align-items-start">
+                                    <h4 class="fs-16 fw-bold text-primary-dark mb-1">Date of Mission</h4>
+                                    <p class="fw-normal fs-14 text-muted m-0">22.10.2021</p>
+                                 </div>
+                                 <div class="right d-flex flex-column align-items-center">
+                                    <h4 class="fs-16 fw-bold text-primary-dark mb-1">Priority Status</h4>
+                                    <p class="fw-normal fs-14 text-muted m-0">High</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card mb-4 border-0 shadow-sm rounded-0 " style="max-width: 800px;">
+                     <div class="row g-0">
+                        <div class="col-md-4">
+                           <img src="../../assets/img/card-img.jpg" class="img-fluid overflow-hidden h-100" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                           <div class="card-body d-flex justify-content-between flex-column h-100">
+                              <div class="d-flex justify-content-between align-items-center mb-2">
+                                 <h5 class="card-title fw-bold fs-24 m-0">Task Title</h5>
+                                 <div class="card-durum d-flex justify-content-center align-items-center gap-3 ">
+                                    <div class="form-check">
+                                       <input style="width: 28px; height: 28px;" type="checkbox"
+                                          class="form-check-input border-2 rounded-2 border-primary-dark"
+                                          id="exampleCheck1">
+                                    </div>
+
+                                    <button name="edit" style="width: 28px; height: 28px;" type="button"
+                                       class="btn btn-success d-flex justify-content-center align-items-center rounded-2">
+                                       <i class="fas fa-pen fs-16"></i>
+                                    </button>
+                                    <button name="delete" style="width: 28px; height: 28px;" type="button"
+                                       class="btn btn-danger d-flex justify-content-center align-items-center rounded-2">
+                                       <i class="fas fa-times fs-16 text-white "></i>
+                                    </button>
+                                 </div>
+                              </div>
+                              <p class="card-text mt-2 mb-4 text-muted">This is a wider card with supporting text below
+                                 as a
+                                 natural lead-in
+                                 to additional content. This content is a little bit longer.</p>
+
+                              <div class="cart-bottom d-flex justify-content-between">
+                                 <div class="left d-flex flex-column align-items-start">
+                                    <h4 class="fs-16 fw-bold text-primary-dark mb-1">Date of Mission</h4>
+                                    <p class="fw-normal fs-14 text-muted m-0">22.10.2021</p>
+                                 </div>
+                                 <div class="right d-flex flex-column align-items-center">
+                                    <h4 class="fs-16 fw-bold text-primary-dark mb-1">Priority Status</h4>
+                                    <p class="fw-normal fs-14 text-muted m-0">High</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+
+               </div>
+            </div>
+            <div class="d-none d-md-block col-md-4 col-lg-4 col-xl-3 bg-primary">
+               <aside style="top: 82px; z-index: 1;" id="sidebar"
+                  class="d-flex justify-content-center mt-4 gap-3 flex-column mx-3 sticky-top">
+                  <button type="button"
+                     class="btn btn-primary-dark d-flex justify-content-start align-items-center rounded-1 px-md-3 py-2 fw-bold">
+                     <i class="far fa-plus-square fs-16 text-white me-3 fw-bold text-nowrap"></i>
+                     Add New Task
+                  </button>
+                  <button type="button"
+                     class="btn btn-light border-primary-dark d-flex justify-content-start align-items-center rounded-1 px-md-3 border-3 py-2 fw-bold text-nowrap">
+                     <i class="fas fa-check fs-16 me-3 fw-bold"></i>
+                     Completed Tasks
+                  </button>
+                  <button type="button"
+                     class="btn btn-light border-primary-dark d-flex justify-content-start align-items-center rounded-1 px-md-3 border-3 py-2 fw-bold text-nowrap">
+                     <i class="far fa-trash-alt fs-16 me-3 fw-bold"></i>
+                     Deleted Tasks
+                  </button>
+               </aside>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Home Content Section Html Code End -->
+
+   <!-- Home Footer Section Html Code Start -->
+
+   <footer class="bg-primary-dark w-100">
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               <p class="my-3 text-white text-center fw-normal fs-14">2021 -- Görev Yönetim Paneli -- By Musa Yazlık</p>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <!-- Home Content Section Html Code End -->
+
+   <!--  Bootstrap Js  -->
+   <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
